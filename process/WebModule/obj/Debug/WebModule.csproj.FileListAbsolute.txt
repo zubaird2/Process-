@@ -1,0 +1,102 @@
+G:\backup zahid\11-5-16\process(ok)\process\WebModule\bin\WebModule.dll.config
+G:\backup zahid\11-5-16\process(ok)\process\WebModule\bin\WebModule.dll
+G:\backup zahid\11-5-16\process(ok)\process\WebModule\bin\WebModule.pdb
+G:\backup zahid\11-5-16\process(ok)\process\WebModule\bin\Antlr3.Runtime.dll
+G:\backup zahid\11-5-16\process(ok)\process\WebModule\bin\Entity.dll
+G:\backup zahid\11-5-16\process(ok)\process\WebModule\bin\EntityFramework.dll
+G:\backup zahid\11-5-16\process(ok)\process\WebModule\bin\Microsoft.Web.Infrastructure.dll
+G:\backup zahid\11-5-16\process(ok)\process\WebModule\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+G:\backup zahid\11-5-16\process(ok)\process\WebModule\bin\Newtonsoft.Json.dll
+G:\backup zahid\11-5-16\process(ok)\process\WebModule\bin\Ninject.dll
+G:\backup zahid\11-5-16\process(ok)\process\WebModule\bin\Ninject.Web.Common.dll
+G:\backup zahid\11-5-16\process(ok)\process\WebModule\bin\System.Web.Mvc.dll
+G:\backup zahid\11-5-16\process(ok)\process\WebModule\bin\System.Web.Optimization.dll
+G:\backup zahid\11-5-16\process(ok)\process\WebModule\bin\System.Web.Providers.dll
+G:\backup zahid\11-5-16\process(ok)\process\WebModule\bin\System.Web.Razor.dll
+G:\backup zahid\11-5-16\process(ok)\process\WebModule\bin\System.Web.WebPages.Deployment.dll
+G:\backup zahid\11-5-16\process(ok)\process\WebModule\bin\System.Web.WebPages.dll
+G:\backup zahid\11-5-16\process(ok)\process\WebModule\bin\System.Web.WebPages.Razor.dll
+G:\backup zahid\11-5-16\process(ok)\process\WebModule\bin\WebGrease.dll
+G:\backup zahid\11-5-16\process(ok)\process\WebModule\bin\Entity.pdb
+G:\backup zahid\11-5-16\process(ok)\process\WebModule\bin\Ninject.xml
+G:\backup zahid\11-5-16\process(ok)\process\WebModule\bin\Ninject.Web.Common.xml
+G:\backup zahid\11-5-16\process(ok)\process\WebModule\bin\EntityFramework.xml
+G:\backup zahid\11-5-16\process(ok)\process\WebModule\bin\Newtonsoft.Json.xml
+G:\backup zahid\11-5-16\process(ok)\process\WebModule\bin\System.Web.Mvc.xml
+G:\backup zahid\11-5-16\process(ok)\process\WebModule\bin\System.Web.Razor.xml
+G:\backup zahid\11-5-16\process(ok)\process\WebModule\bin\System.Web.WebPages.xml
+G:\backup zahid\11-5-16\process(ok)\process\WebModule\bin\System.Web.WebPages.Deployment.xml
+G:\backup zahid\11-5-16\process(ok)\process\WebModule\bin\System.Web.WebPages.Razor.xml
+G:\backup zahid\11-5-16\process(ok)\process\WebModule\obj\Debug\WebModule.csprojResolveAssemblyReference.cache
+G:\backup zahid\11-5-16\process(ok)\process\WebModule\obj\Debug\WebModule.dll
+G:\backup zahid\11-5-16\process(ok)\process\WebModule\obj\Debug\WebModule.pdb
+G:\process(ok)\process\WebModule\bin\WebModule.dll.config
+G:\process(ok)\process\WebModule\bin\WebModule.dll
+G:\process(ok)\process\WebModule\bin\WebModule.pdb
+G:\process(ok)\process\WebModule\bin\Antlr3.Runtime.dll
+G:\process(ok)\process\WebModule\bin\Entity.dll
+G:\process(ok)\process\WebModule\bin\EntityFramework.dll
+G:\process(ok)\process\WebModule\bin\Microsoft.Web.Infrastructure.dll
+G:\process(ok)\process\WebModule\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+G:\process(ok)\process\WebModule\bin\Newtonsoft.Json.dll
+G:\process(ok)\process\WebModule\bin\Ninject.dll
+G:\process(ok)\process\WebModule\bin\Ninject.Web.Common.dll
+G:\process(ok)\process\WebModule\bin\System.Web.Mvc.dll
+G:\process(ok)\process\WebModule\bin\System.Web.Optimization.dll
+G:\process(ok)\process\WebModule\bin\System.Web.Providers.dll
+G:\process(ok)\process\WebModule\bin\System.Web.Razor.dll
+G:\process(ok)\process\WebModule\bin\System.Web.WebPages.Deployment.dll
+G:\process(ok)\process\WebModule\bin\System.Web.WebPages.dll
+G:\process(ok)\process\WebModule\bin\System.Web.WebPages.Razor.dll
+G:\process(ok)\process\WebModule\bin\WebGrease.dll
+G:\process(ok)\process\WebModule\bin\Entity.pdb
+G:\process(ok)\process\WebModule\bin\Ninject.xml
+G:\process(ok)\process\WebModule\bin\Ninject.Web.Common.xml
+G:\process(ok)\process\WebModule\bin\EntityFramework.xml
+G:\process(ok)\process\WebModule\bin\Newtonsoft.Json.xml
+G:\process(ok)\process\WebModule\bin\System.Web.Mvc.xml
+G:\process(ok)\process\WebModule\bin\System.Web.Razor.xml
+G:\process(ok)\process\WebModule\bin\System.Web.WebPages.xml
+G:\process(ok)\process\WebModule\bin\System.Web.WebPages.Deployment.xml
+G:\process(ok)\process\WebModule\bin\System.Web.WebPages.Razor.xml
+G:\process(ok)\process\WebModule\obj\Debug\WebModule.csprojResolveAssemblyReference.cache
+G:\process(ok)\process\WebModule\obj\Debug\WebModule.dll
+G:\process(ok)\process\WebModule\obj\Debug\WebModule.pdb
+F:\Project\process(ok)\process\WebModule\bin\WebModule.dll.config
+F:\Project\process(ok)\process\WebModule\bin\WebModule.dll
+F:\Project\process(ok)\process\WebModule\bin\WebModule.pdb
+F:\Project\process(ok)\process\WebModule\bin\Antlr3.Runtime.dll
+F:\Project\process(ok)\process\WebModule\bin\Entity.dll
+F:\Project\process(ok)\process\WebModule\bin\EntityFramework.dll
+F:\Project\process(ok)\process\WebModule\bin\Microsoft.Web.Infrastructure.dll
+F:\Project\process(ok)\process\WebModule\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+F:\Project\process(ok)\process\WebModule\bin\Newtonsoft.Json.dll
+F:\Project\process(ok)\process\WebModule\bin\Ninject.dll
+F:\Project\process(ok)\process\WebModule\bin\Ninject.Web.Common.dll
+F:\Project\process(ok)\process\WebModule\bin\System.Net.Http.Formatting.dll
+F:\Project\process(ok)\process\WebModule\bin\System.Web.Http.dll
+F:\Project\process(ok)\process\WebModule\bin\System.Web.Http.WebHost.dll
+F:\Project\process(ok)\process\WebModule\bin\System.Web.Mvc.dll
+F:\Project\process(ok)\process\WebModule\bin\System.Web.Optimization.dll
+F:\Project\process(ok)\process\WebModule\bin\System.Web.Providers.dll
+F:\Project\process(ok)\process\WebModule\bin\System.Web.Razor.dll
+F:\Project\process(ok)\process\WebModule\bin\System.Web.WebPages.Deployment.dll
+F:\Project\process(ok)\process\WebModule\bin\System.Web.WebPages.dll
+F:\Project\process(ok)\process\WebModule\bin\System.Web.WebPages.Razor.dll
+F:\Project\process(ok)\process\WebModule\bin\WebGrease.dll
+F:\Project\process(ok)\process\WebModule\bin\Entity.pdb
+F:\Project\process(ok)\process\WebModule\bin\Ninject.xml
+F:\Project\process(ok)\process\WebModule\bin\Ninject.Web.Common.xml
+F:\Project\process(ok)\process\WebModule\bin\EntityFramework.xml
+F:\Project\process(ok)\process\WebModule\bin\Newtonsoft.Json.xml
+F:\Project\process(ok)\process\WebModule\bin\System.Net.Http.Formatting.xml
+F:\Project\process(ok)\process\WebModule\bin\System.Web.Http.xml
+F:\Project\process(ok)\process\WebModule\bin\System.Web.Http.WebHost.xml
+F:\Project\process(ok)\process\WebModule\bin\System.Web.Mvc.xml
+F:\Project\process(ok)\process\WebModule\bin\System.Web.Razor.xml
+F:\Project\process(ok)\process\WebModule\bin\System.Web.WebPages.xml
+F:\Project\process(ok)\process\WebModule\bin\System.Web.WebPages.Deployment.xml
+F:\Project\process(ok)\process\WebModule\bin\System.Web.WebPages.Razor.xml
+F:\Project\process(ok)\process\WebModule\obj\Debug\WebModule.csprojResolveAssemblyReference.cache
+F:\Project\process(ok)\process\WebModule\obj\Debug\WebModule.dll
+F:\Project\process(ok)\process\WebModule\obj\Debug\WebModule.pdb

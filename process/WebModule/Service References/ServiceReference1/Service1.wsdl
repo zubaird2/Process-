@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:6358/Service1.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:6358/Service1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:6358/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WcfService" />
+      <xsd:import schemaLocation="http://localhost:6358/Service1.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Entity" />
+      <xsd:import schemaLocation="http://localhost:6358/Service1.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/System.Drawing" />
+      <xsd:import schemaLocation="http://localhost:6358/Service1.svc?xsd=xsd5" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://localhost:6358/Service1.svc?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_GetData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetData" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetDataUsingDataContract_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataUsingDataContract" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetDataUsingDataContract_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataUsingDataContractResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_InsertToDB_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertToDB" />
+  </wsdl:message>
+  <wsdl:message name="IService1_InsertToDB_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertToDBResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_StopApplication_InputMessage">
+    <wsdl:part name="parameters" element="tns:StopApplication" />
+  </wsdl:message>
+  <wsdl:message name="IService1_StopApplication_OutputMessage">
+    <wsdl:part name="parameters" element="tns:StopApplicationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetAllLogs_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllLogs" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetAllLogs_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllLogsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SaveScreenShot_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveScreenShot" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SaveScreenShot_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveScreenShotResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetLogsWithPercentageCal_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLogsWithPercentageCal" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetLogsWithPercentageCal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLogsWithPercentageCalResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getImages_InputMessage">
+    <wsdl:part name="parameters" element="tns:getImages" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getImages_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getImagesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getAllProecss_InputMessage">
+    <wsdl:part name="parameters" element="tns:getAllProecss" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getAllProecss_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getAllProecssResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getDataByDate_InputMessage">
+    <wsdl:part name="parameters" element="tns:getDataByDate" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getDataByDate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getDataByDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getDataById_InputMessage">
+    <wsdl:part name="parameters" element="tns:getDataById" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getDataById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getDataByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getAllImages_InputMessage">
+    <wsdl:part name="parameters" element="tns:getAllImages" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getAllImages_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getAllImagesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetScreenShotsByDate_Id_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetScreenShotsByDate_Id" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetScreenShotsByDate_Id_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetScreenShotsByDate_IdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetApplication_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetApplication" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetApplication_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetApplicationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateApplicationData_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateApplicationData" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateApplicationData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateApplicationDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetDataForChart_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataForChart" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetDataForChart_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataForChartResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Login_InputMessage">
+    <wsdl:part name="parameters" element="tns:Login" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Login_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdatePassword_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePassword" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdatePassword_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePasswordResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="GetData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetData" message="tns:IService1_GetData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetDataResponse" message="tns:IService1_GetData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDataUsingDataContract">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetDataUsingDataContract" message="tns:IService1_GetDataUsingDataContract_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetDataUsingDataContractResponse" message="tns:IService1_GetDataUsingDataContract_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertToDB">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/InsertToDB" message="tns:IService1_InsertToDB_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/InsertToDBResponse" message="tns:IService1_InsertToDB_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="StopApplication">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/StopApplication" message="tns:IService1_StopApplication_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/StopApplicationResponse" message="tns:IService1_StopApplication_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllLogs">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetAllLogs" message="tns:IService1_GetAllLogs_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetAllLogsResponse" message="tns:IService1_GetAllLogs_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveScreenShot">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SaveScreenShot" message="tns:IService1_SaveScreenShot_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SaveScreenShotResponse" message="tns:IService1_SaveScreenShot_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLogsWithPercentageCal">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetLogsWithPercentageCal" message="tns:IService1_GetLogsWithPercentageCal_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetLogsWithPercentageCalResponse" message="tns:IService1_GetLogsWithPercentageCal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getImages">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/getImages" message="tns:IService1_getImages_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/getImagesResponse" message="tns:IService1_getImages_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getAllProecss">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/getAllProecss" message="tns:IService1_getAllProecss_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/getAllProecssResponse" message="tns:IService1_getAllProecss_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getDataByDate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/getDataByDate" message="tns:IService1_getDataByDate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/getDataByDateResponse" message="tns:IService1_getDataByDate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getDataById">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/getDataById" message="tns:IService1_getDataById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/getDataByIdResponse" message="tns:IService1_getDataById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getAllImages">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/getAllImages" message="tns:IService1_getAllImages_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/getAllImagesResponse" message="tns:IService1_getAllImages_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetScreenShotsByDate_Id">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetScreenShotsByDate_Id" message="tns:IService1_GetScreenShotsByDate_Id_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetScreenShotsByDate_IdResponse" message="tns:IService1_GetScreenShotsByDate_Id_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetApplication">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetApplication" message="tns:IService1_GetApplication_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetApplicationResponse" message="tns:IService1_GetApplication_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateApplicationData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/UpdateApplicationData" message="tns:IService1_UpdateApplicationData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/UpdateApplicationDataResponse" message="tns:IService1_UpdateApplicationData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDataForChart">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetDataForChart" message="tns:IService1_GetDataForChart_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetDataForChartResponse" message="tns:IService1_GetDataForChart_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Login" message="tns:IService1_Login_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/LoginResponse" message="tns:IService1_Login_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePassword">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/UpdatePassword" message="tns:IService1_UpdatePassword_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/UpdatePasswordResponse" message="tns:IService1_UpdatePassword_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetData">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataUsingDataContract">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetDataUsingDataContract" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertToDB">
+      <soap:operation soapAction="http://tempuri.org/IService1/InsertToDB" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StopApplication">
+      <soap:operation soapAction="http://tempuri.org/IService1/StopApplication" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllLogs">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetAllLogs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveScreenShot">
+      <soap:operation soapAction="http://tempuri.org/IService1/SaveScreenShot" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLogsWithPercentageCal">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetLogsWithPercentageCal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getImages">
+      <soap:operation soapAction="http://tempuri.org/IService1/getImages" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllProecss">
+      <soap:operation soapAction="http://tempuri.org/IService1/getAllProecss" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDataByDate">
+      <soap:operation soapAction="http://tempuri.org/IService1/getDataByDate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDataById">
+      <soap:operation soapAction="http://tempuri.org/IService1/getDataById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllImages">
+      <soap:operation soapAction="http://tempuri.org/IService1/getAllImages" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetScreenShotsByDate_Id">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetScreenShotsByDate_Id" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetApplication">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetApplication" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateApplicationData">
+      <soap:operation soapAction="http://tempuri.org/IService1/UpdateApplicationData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataForChart">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetDataForChart" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <soap:operation soapAction="http://tempuri.org/IService1/Login" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePassword">
+      <soap:operation soapAction="http://tempuri.org/IService1/UpdatePassword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://localhost:6358/Service1.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

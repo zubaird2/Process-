@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>G:\Service</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="App_Data/1-42500.9886202778.jpeg">
+      <publishTime>05/10/2016 23:43:38</publishTime>
+    </File>
+    <File Include="App_Data/1-42500.9886354167.jpeg">
+      <publishTime>05/10/2016 23:43:40</publishTime>
+    </File>
+    <File Include="App_Data/1-42500.9886506829.jpeg">
+      <publishTime>05/10/2016 23:43:40</publishTime>
+    </File>
+    <File Include="App_Data/1-42500.9886665046.jpeg">
+      <publishTime>05/10/2016 23:43:42</publishTime>
+    </File>
+    <File Include="App_Data/1-42500.9886818634.jpeg">
+      <publishTime>05/10/2016 23:43:44</publishTime>
+    </File>
+    <File Include="App_Data/1-42500.9886973958.jpeg">
+      <publishTime>05/10/2016 23:43:44</publishTime>
+    </File>
+    <File Include="App_Data/1-42500.9887121528.jpeg">
+      <publishTime>05/10/2016 23:43:46</publishTime>
+    </File>
+    <File Include="App_Data/1-42500.9887272338.jpeg">
+      <publishTime>05/10/2016 23:43:48</publishTime>
+    </File>
+    <File Include="App_Data/1-42500.9887429745.jpeg">
+      <publishTime>05/10/2016 23:43:48</publishTime>
+    </File>
+    <File Include="App_Data/1-42500.9887573495.jpeg">
+      <publishTime>05/10/2016 23:43:50</publishTime>
+    </File>
+    <File Include="App_Data/42545.4580528935-1-42545.4580528935.jpeg">
+      <publishTime>06/24/2016 11:28:14</publishTime>
+    </File>
+    <File Include="App_Data/42545.4581126042-1-42545.4581126042.jpeg">
+      <publishTime>06/24/2016 11:28:28</publishTime>
+    </File>
+    <File Include="App_Data/42545.4582920255-1-42545.4582920255.jpeg">
+      <publishTime>06/24/2016 10:59:58</publishTime>
+    </File>
+    <File Include="App_Data/42548.6456081597-1-42548.6456081597.jpeg">
+      <publishTime>06/27/2016 15:29:42</publishTime>
+    </File>
+    <File Include="App_Data/42548.6456695602-1-42548.6456695602.jpeg">
+      <publishTime>06/27/2016 15:29:46</publishTime>
+    </File>
+    <File Include="App_Data/42548.6457288657-1-42548.6457288657.jpeg">
+      <publishTime>06/27/2016 15:29:52</publishTime>
+    </File>
+    <File Include="bin/BLL.dll">
+      <publishTime>06/27/2016 10:48:20</publishTime>
+    </File>
+    <File Include="bin/DAL.dll">
+      <publishTime>06/27/2016 10:48:18</publishTime>
+    </File>
+    <File Include="bin/Entity.dll">
+      <publishTime>05/09/2016 14:11:02</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>11/05/2015 11:29:24</publishTime>
+    </File>
+    <File Include="bin/WcfService.dll">
+      <publishTime>06/27/2016 15:35:34</publishTime>
+    </File>
+    <File Include="image/42543.5220164352-1-42543.5220164352.jpeg">
+      <publishTime>06/22/2016 12:31:44</publishTime>
+    </File>
+    <File Include="image/42543.528337963-1-42543.528337963.jpeg">
+      <publishTime>06/22/2016 12:40:50</publishTime>
+    </File>
+    <File Include="image/42543.5309264352-1-42543.5309264352.jpeg">
+      <publishTime>06/22/2016 12:44:34</publishTime>
+    </File>
+    <File Include="Service1.svc">
+      <publishTime>03/23/2016 18:32:14</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>06/27/2016 15:11:58</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

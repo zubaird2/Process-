@@ -1,0 +1,311 @@
+﻿@model List<Entity.ApplicationObject>
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Highcharts Example</title>
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#chrt").click(function () {
+                var s = $("#datef").val();
+                var e = $("#datet").val();
+                var uid = $("#UserId").val();
+                debugger;
+                if (s != "" && e != "" && uid != "") {
+                    var setting = {
+                        type: "GET",
+                        async: false,
+                        data: "",
+                        url: "/Home/GetDataForChart/?s=" + s + "&e=" + e + "&uid=" + uid,
+                        success: function (d,a) {
+                            var dp = [];
+                            var cp = [];
+                            var sumtp=0;
+                            var du = [];
+                            var cu = [];
+                            var sumtu=0;
+                            var dud = [];
+                            var cud = [];
+                            var sumtud=0;
+                            for (var i = 0; i < d.length; i++) {
+                                var v = d[i].Key.split(',');
+                                        if (v[1]=='p') {
+                                            cp.push(v[0]);
+                                            dp.push(d[i].Value);
+                                            sumtp = sumtp + d[i].Value;
+                                        }
+                                        else if (v[1]=='u') {
+                                            cu.push(v[0]);
+                                            du.push(d[i].Value);
+                                            sumtu = sumtu + d[i].Value;
+                                        }
+                                        else
+                                        {
+                                            cud.push(v[0]);
+                                            dud.push(d[i].Value);
+                                            sumtud = sumtud + d[i].Value;
+                                        }
+                                }
+
+                            var colors = Highcharts.getOptions().colors,
+                       categories = ['Productive', 'UnProductive', 'Other'],
+                       data = [{
+                           y: sumtp,
+                           color: colors[2],
+                           drilldown: {
+                               name: 'Productive',
+                               categories:cp,
+                               data: dp,
+                               color: colors[2]
+                           }
+                       }, {
+                           y: sumtu,
+                           color: colors[3],
+                           drilldown: {
+                               name: 'UnProductive',
+                               categories: cu,
+                               data: du,
+                               color: colors[3]
+                           }
+                       }, {
+                           y: sumtud,
+                           color: colors[4],
+                           drilldown: {
+                               name: 'Undefine',
+                               categories:cud,
+                               data:dud,
+                               color: colors[4]
+                           }
+
+                       }],
+                       TotalTime = [],
+                       AppTime = [],
+                       i,
+                       j,
+                       dataLen = data.length,
+                       drillDataLen,
+                       brightness;
+
+
+                            // Build the data arrays
+                            for (i = 0; i < dataLen; i += 1) {
+
+                                // add browser data
+                                TotalTime.push({
+                                    name: categories[i],
+                                    y: data[i].y,
+                                    color: data[i].color
+                                });
+
+                                // add version data
+                                drillDataLen = data[i].drilldown.data.length;
+                                for (j = 0; j < drillDataLen; j += 1) {
+                                    brightness = 0.2 - (j / drillDataLen) / 5;
+                                    AppTime.push({
+                                        name: data[i].drilldown.categories[j],
+                                        y: data[i].drilldown.data[j],
+                                        color: Highcharts.Color(data[i].color).brighten(brightness).get()
+                                    });
+                                }
+                            }
+
+                            // Create the chart
+                            $('#container').highcharts({
+                                chart: {
+                                    type: 'pie'
+                                },
+                                title: {
+                                    text: "% View of Usage of Productive,UnProductive and Other Application"
+                                },
+
+                                subtitle: {
+                                    text: 'In term of % Time'
+                                },
+                                plotOptions: {
+                                    pie: {
+                                        shadow: false,
+                                        center: ['50%', '50%']
+                                    }
+                                },
+                                tooltip: {
+                                    valueSuffix: '%'
+                                },
+                                series: [{
+                                    name: '% Usage Time',
+                                    data: TotalTime,
+                                    size: '60%',
+                                    dataLabels: {
+                                        formatter: function () {
+                                            return this.y > 5 ? this.point.name : null;
+                                        },
+                                        color: '#ffffff',
+                                        distance: -30
+                                    }
+                                }, {
+                                    name: '% Usage Time',
+                                    data: AppTime,
+                                    size: '90%',
+                                    innerSize: '60%',
+                                    dataLabels: {
+                                        formatter: function () {
+                                            // display only if larger than 1
+                                            return this.y > 1 ? '<b>' + this.point.name + ':</b> ' + this.y + '%' : null;
+                                        }
+                                    }
+                                }]
+                            });
+                        },
+
+                        error: function () {
+                            alert("error");
+                        }
+                    }
+                    $.ajax(setting);
+
+                }
+                else {
+                    alert("Please choose Dates And User ID");
+                }
+            });
+        });
+    </script>
+    <script src="~/Scripts/highcharts.js"></script>
+</head>
+
+
+<div id="page-wrapper">
+
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header"><i class="fa fa-pie-chart fa-x"></i>Chart </h1>
+            <ol class="breadcrumb">
+                <li>
+                    @Html.ActionLink("Dashboard", "Index", "Home", new { @class = "fa fa-lg fa-dashboard " })
+
+                </li>
+                <li class="active"><i class="fa fa-pie-chart"></i>Chart</li>
+            </ol>
+
+        </div>
+    </div><!-- /.row -->
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="panel panel-green">
+                <div class="panel-heading">
+                    Select Duration And User Id
+                </div>
+                <div class="panel-body">
+                    <div class="form-group">
+                        <table>
+                            <tr>
+                                <td class="col-lg-1"><label for="datef">From:</label><input type="date" class="form-control" placeholder="From" id="datef"></td>
+
+
+                                <td class="col-lg-1"><label for="datet">To:</label><input type="date" class="form-control" placeholder="From" id="datet"></td>
+
+
+                                <td class="col-lg-1"><label for="datef">User Id:</label><input type="number" class="form-control" placeholder="User ID" id="UserId"></td>
+                            </tr>
+                            <tr>
+                                <td><br /></td>
+                            </tr>
+                            <tr>
+
+                                <td class="col-lg-1"><button type="submit" id="chrt" class="btn btn-success">Draw Graph</button></td>
+
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+
+        <div id="container" class="col-lg-9"></div>
+        <div class="col-lg-3">
+            <div class="panel panel-success">
+                <div class="panel-heading">
+                    <h3>Applications</h3>
+                </div>
+                <!-- .panel-heading -->
+                <div class="panel-body">
+                    <div class="panel-group" id="accordion">
+                        <div class="panel panel-success">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">As Productive</a>
+                                </h4>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    @for (int i = 0, n = 1; i < Model.Count; i++)
+                                    {
+                                        if (@Model[i].Productivity.Equals("Productive"))
+                                        {
+                                            <label>@n-  @Model[i].App_Name</label>
+                                            n = n + 1;
+                                        }
+                                    }
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-success">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">As UnProductive</a>
+                                </h4>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    @for (int i = 0, n = 1; i < Model.Count; i++)
+                                    {
+                                        if (@Model[i].Productivity.Equals("UnProductive"))
+                                        {
+                                            <label>@n-  @Model[i].App_Name</label>
+                                            n = n + 1;
+                                        }
+                                    }
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="panel panel-success">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Undefine</a>
+                                </h4>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    @for (int i = 0, n = 1; i < Model.Count; i++)
+                                    {
+                                        if (@Model[i].Productivity.Equals("Undefine"))
+                                        {
+                                            <label>@n-  @Model[i].App_Name</label>
+                                            n = n + 1;
+                                        }
+                                    }
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <!-- .panel-body -->
+            </div>
+            <!-- /.panel -->
+        </div>
+        <!-- /.col-lg-12 -->
+    </div>
+</div>

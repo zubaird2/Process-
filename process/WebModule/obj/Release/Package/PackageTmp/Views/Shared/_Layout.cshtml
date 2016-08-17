@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Work Analyser</title>
+
+    <link rel="icon"
+          type="image/png"
+          href="~/Content/images/AIM%20ERGOTECH.png">
+    <link href="~/Content/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="~/Scripts/bootstrap.js"></script>
+    <link href="~/Content/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- MetisMenu CSS -->
+    <link href="~/Content/bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet" />
+
+    <script src="~/Content/bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- Timeline CSS -->
+    <link href="~/Content/timeline.css" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link href="~/Content/sb-admin-2.css" rel="stylesheet" />
+    <!-- Morris Charts CSS -->
+    <link href="~/Content/bower_components/morrisjs/morris.css" rel="stylesheet" />
+    <link href="~/Content/lightbox.css" rel="stylesheet" />
+    <!-- Custom Fonts -->
+    <link href="~/Content/bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <script src="~/Content/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="~/Content/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="~/Content/bower_components/metisMenu/dist/metisMenu.js"></script>
+
+    <link href="~/Content/login.css" rel="stylesheet" />
+    <script src="~/Scripts/sb-admin-2.js"></script>
+    <link href="~/Content/mDropDown.css" rel="stylesheet" />
+
+    <script src="~/Scripts/sweetalert.min.js"></script>
+    <link href="~/Content/sweetalert.css" rel="stylesheet" />
+    <link href="~/Content/loader.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery.min.js"></script>
+    <script src="~/Scripts/modernizr.js"></script>
+</head>
+
+
+<body>
+    <div class="se-pre-con"></div>
+    <div id="wrapper">
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class=" navbar-header">
+
+                <a class="navbar-brand" href="@Url.Action("Home", "Home")"><i class="fa fa-home"></i><span>Work Analyser</span></a>
+
+            </div>
+            <!-- Top Menu Items -->
+            <ul class="nav navbar-top-links navbar-right">
+                <li>
+                    <a href="@Url.Action("SelectApplication", "Home")"><i class="fa fa-cogs fa-fw"></i>Setting</a>
+
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li>
+                            <a href="\Home\Logout" id="lgout"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li class="dropdown-submenu">
+                            <a id="cp"><i class="fa fa-edit fa-fw"></i> Change Password</a>
+                            <ul class="dropdown-menu">
+                                <li><input class="form-control" placeholder="Previous Password" id="ppassword" type="password" value=""></li>
+                                <li class="divider"></li>
+                                <li><input class="form-control" placeholder="New Password" id="npassword" type="password" value=""></li>
+                               <li><button type="button" class="btn btn-success btn-block bottom" id="update">Update</button></li>
+                            
+                            </ul>
+                        </li>
+                        
+                    </ul>
+                    <!-- /.dropdown-user -->
+                    </li>
+                </ul>
+
+
+        </nav>
+
+        @RenderBody();
+
+
+    </div>
+
+</body>
+</html>

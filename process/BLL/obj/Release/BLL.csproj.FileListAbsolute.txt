@@ -1,0 +1,11 @@
+G:\process(ok)\process\BLL\bin\Release\BLL.dll
+G:\process(ok)\process\BLL\bin\Release\BLL.pdb
+G:\process(ok)\process\BLL\bin\Release\DAL.dll
+G:\process(ok)\process\BLL\bin\Release\Entity.dll
+G:\process(ok)\process\BLL\bin\Release\EntityFramework.dll
+G:\process(ok)\process\BLL\bin\Release\DAL.pdb
+G:\process(ok)\process\BLL\bin\Release\Entity.pdb
+G:\process(ok)\process\BLL\bin\Release\EntityFramework.xml
+G:\process(ok)\process\BLL\obj\Release\BLL.csprojResolveAssemblyReference.cache
+G:\process(ok)\process\BLL\obj\Release\BLL.dll
+G:\process(ok)\process\BLL\obj\Release\BLL.pdb

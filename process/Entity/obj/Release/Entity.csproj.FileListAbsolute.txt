@@ -1,0 +1,5 @@
+G:\process(ok)\process\Entity\bin\Release\Entity.dll
+G:\process(ok)\process\Entity\bin\Release\Entity.pdb
+G:\process(ok)\process\Entity\obj\Release\Entity.csprojResolveAssemblyReference.cache
+G:\process(ok)\process\Entity\obj\Release\Entity.dll
+G:\process(ok)\process\Entity\obj\Release\Entity.pdb

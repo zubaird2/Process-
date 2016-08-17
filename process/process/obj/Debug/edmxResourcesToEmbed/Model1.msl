@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="KinectDatabaseModelStoreContainer" CdmEntityContainer="KinectDatabaseEntities">
+    <EntitySetMapping Name="FrequencyTimes">
+      <EntityTypeMapping TypeName="KinectDatabaseModel.FrequencyTime">
+        <MappingFragment StoreEntitySet="FrequencyTime">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="TotalKeyStrokes" ColumnName="TotalKeyStrokes" />
+          <ScalarProperty Name="Time" ColumnName="Time" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KeyStorkes">
+      <EntityTypeMapping TypeName="KinectDatabaseModel.KeyStorke">
+        <MappingFragment StoreEntitySet="KeyStorke">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="KeyValue" ColumnName="KeyValue" />
+          <ScalarProperty Name="Ascii" ColumnName="Ascii" />
+          <ScalarProperty Name="freq" ColumnName="freq" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Logs">
+      <EntityTypeMapping TypeName="KinectDatabaseModel.Log">
+        <MappingFragment StoreEntitySet="Logs">
+          <ScalarProperty Name="LID" ColumnName="LID" />
+          <ScalarProperty Name="UID" ColumnName="UID" />
+          <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+          <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RULATblAs">
+      <EntityTypeMapping TypeName="KinectDatabaseModel.RULATblA">
+        <MappingFragment StoreEntitySet="RULATblA">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UA" ColumnName="UA" />
+          <ScalarProperty Name="LA" ColumnName="LA" />
+          <ScalarProperty Name="WT11" ColumnName="WT11" />
+          <ScalarProperty Name="WT12" ColumnName="WT12" />
+          <ScalarProperty Name="WT21" ColumnName="WT21" />
+          <ScalarProperty Name="WT22" ColumnName="WT22" />
+          <ScalarProperty Name="WT31" ColumnName="WT31" />
+          <ScalarProperty Name="WT32" ColumnName="WT32" />
+          <ScalarProperty Name="WT41" ColumnName="WT41" />
+          <ScalarProperty Name="WT42" ColumnName="WT42" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RULATblBs">
+      <EntityTypeMapping TypeName="KinectDatabaseModel.RULATblB">
+        <MappingFragment StoreEntitySet="RULATblB">
+          <ScalarProperty Name="Neck" ColumnName="Neck" />
+          <ScalarProperty Name="L11" ColumnName="L11" />
+          <ScalarProperty Name="L12" ColumnName="L12" />
+          <ScalarProperty Name="L21" ColumnName="L21" />
+          <ScalarProperty Name="L22" ColumnName="L22" />
+          <ScalarProperty Name="L31" ColumnName="L31" />
+          <ScalarProperty Name="L32" ColumnName="L32" />
+          <ScalarProperty Name="L41" ColumnName="L41" />
+          <ScalarProperty Name="L42" ColumnName="L42" />
+          <ScalarProperty Name="L51" ColumnName="L51" />
+          <ScalarProperty Name="L52" ColumnName="L52" />
+          <ScalarProperty Name="L61" ColumnName="L61" />
+          <ScalarProperty Name="L62" ColumnName="L62" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RULATblCs">
+      <EntityTypeMapping TypeName="KinectDatabaseModel.RULATblC">
+        <MappingFragment StoreEntitySet="RULATblC">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="C1" ColumnName="C1" />
+          <ScalarProperty Name="C2" ColumnName="C2" />
+          <ScalarProperty Name="C3" ColumnName="C3" />
+          <ScalarProperty Name="C4" ColumnName="C4" />
+          <ScalarProperty Name="C5" ColumnName="C5" />
+          <ScalarProperty Name="C6" ColumnName="C6" />
+          <ScalarProperty Name="C7" ColumnName="C7" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Rules">
+      <EntityTypeMapping TypeName="KinectDatabaseModel.Rule">
+        <MappingFragment StoreEntitySet="Rules">
+          <ScalarProperty Name="RID" ColumnName="RID" />
+          <ScalarProperty Name="Joint" ColumnName="Joint" />
+          <ScalarProperty Name="RuleDesc" ColumnName="RuleDesc" />
+          <ScalarProperty Name="LowRange" ColumnName="LowRange" />
+          <ScalarProperty Name="HighRange" ColumnName="HighRange" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="KinectDatabaseModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="User_Table">
+      <EntityTypeMapping TypeName="KinectDatabaseModel.User_Table">
+        <MappingFragment StoreEntitySet="User_Table">
+          <ScalarProperty Name="UID" ColumnName="UID" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Violations">
+      <EntityTypeMapping TypeName="KinectDatabaseModel.Violation">
+        <MappingFragment StoreEntitySet="Violation">
+          <ScalarProperty Name="VID" ColumnName="VID" />
+          <ScalarProperty Name="LID" ColumnName="LID" />
+          <ScalarProperty Name="RID" ColumnName="RID" />
+          <ScalarProperty Name="Angle" ColumnName="Angle" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="KinectDatabaseModel.Store.sp_alterdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="KinectDatabaseModel.Store.sp_creatediagram" />
+    <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="KinectDatabaseModel.Store.sp_dropdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="KinectDatabaseModel.Store.sp_helpdiagramdefinition" />
+    <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="KinectDatabaseModel.Store.sp_helpdiagrams" />
+    <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="KinectDatabaseModel.Store.sp_renamediagram" />
+    <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="KinectDatabaseModel.Store.sp_upgraddiagrams" />
+    <EntitySetMapping Name="ProcessDatas">
+      <EntityTypeMapping TypeName="KinectDatabaseModel.ProcessData">
+        <MappingFragment StoreEntitySet="ProcessData">
+          <ScalarProperty Name="MouseTime" ColumnName="MouseTime" />
+          <ScalarProperty Name="MouseUseCount" ColumnName="MouseUseCount" />
+          <ScalarProperty Name="P_Width" ColumnName="P_Width" />
+          <ScalarProperty Name="P_Hieght" ColumnName="P_Hieght" />
+          <ScalarProperty Name="keyStroke" ColumnName="keyStroke" />
+          <ScalarProperty Name="EndActiveTime" ColumnName="EndActiveTime" />
+          <ScalarProperty Name="StartActiveTime" ColumnName="StartActiveTime" />
+          <ScalarProperty Name="UId" ColumnName="UId" />
+          <ScalarProperty Name="ProcessTitle" ColumnName="ProcessTitle" />
+          <ScalarProperty Name="ProcessName" ColumnName="ProcessName" />
+          <ScalarProperty Name="ProcessId" ColumnName="ProcessId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

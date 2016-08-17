@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="KinectDatabaseModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="FrequencyTime">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TotalKeyStrokes" Type="int" Nullable="false" />
+    <Property Name="Time" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="KeyStorke">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="KeyValue" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Ascii" Type="int" Nullable="false" />
+    <Property Name="freq" Type="int" />
+  </EntityType>
+  <EntityType Name="Logs">
+    <Key>
+      <PropertyRef Name="LID" />
+    </Key>
+    <Property Name="LID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UID" Type="int" Nullable="false" />
+    <Property Name="StartTime" Type="datetime" Nullable="false" />
+    <Property Name="EndTime" Type="datetime" />
+  </EntityType>
+  <EntityType Name="ProcessData">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProcessId" Type="int" Nullable="false" />
+    <Property Name="ProcessName" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="ProcessTitle" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="UId" Type="int" Nullable="false" />
+    <Property Name="StartActiveTime" Type="datetime" Nullable="false" />
+    <Property Name="EndActiveTime" Type="datetime" />
+    <Property Name="keyStroke" Type="int" />
+    <Property Name="P_Hieght" Type="int" />
+    <Property Name="P_Width" Type="int" />
+    <Property Name="MouseUseCount" Type="int" />
+    <Property Name="MouseTime" Type="time" Precision="7" />
+  </EntityType>
+  <EntityType Name="RULATblA">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UA" Type="int" Nullable="false" />
+    <Property Name="LA" Type="int" Nullable="false" />
+    <Property Name="WT11" Type="int" Nullable="false" />
+    <Property Name="WT12" Type="int" Nullable="false" />
+    <Property Name="WT21" Type="int" Nullable="false" />
+    <Property Name="WT22" Type="int" Nullable="false" />
+    <Property Name="WT31" Type="int" Nullable="false" />
+    <Property Name="WT32" Type="int" Nullable="false" />
+    <Property Name="WT41" Type="int" Nullable="false" />
+    <Property Name="WT42" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="RULATblB">
+    <Key>
+      <PropertyRef Name="Neck" />
+    </Key>
+    <Property Name="Neck" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="L11" Type="int" Nullable="false" />
+    <Property Name="L12" Type="int" Nullable="false" />
+    <Property Name="L21" Type="int" Nullable="false" />
+    <Property Name="L22" Type="int" Nullable="false" />
+    <Property Name="L31" Type="int" Nullable="false" />
+    <Property Name="L32" Type="int" Nullable="false" />
+    <Property Name="L41" Type="int" Nullable="false" />
+    <Property Name="L42" Type="int" Nullable="false" />
+    <Property Name="L51" Type="int" Nullable="false" />
+    <Property Name="L52" Type="int" Nullable="false" />
+    <Property Name="L61" Type="int" Nullable="false" />
+    <Property Name="L62" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="RULATblC">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="C1" Type="int" Nullable="false" />
+    <Property Name="C2" Type="int" Nullable="false" />
+    <Property Name="C3" Type="int" Nullable="false" />
+    <Property Name="C4" Type="int" Nullable="false" />
+    <Property Name="C5" Type="int" Nullable="false" />
+    <Property Name="C6" Type="int" Nullable="false" />
+    <Property Name="C7" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Rules">
+    <Key>
+      <PropertyRef Name="RID" />
+    </Key>
+    <Property Name="RID" Type="int" Nullable="false" />
+    <Property Name="Joint" Type="int" Nullable="false" />
+    <Property Name="RuleDesc" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LowRange" Type="float" Nullable="false" />
+    <Property Name="HighRange" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="User_Table">
+    <Key>
+      <PropertyRef Name="UID" />
+    </Key>
+    <Property Name="UID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Password" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Violation">
+    <Key>
+      <PropertyRef Name="VID" />
+    </Key>
+    <Property Name="VID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="LID" Type="int" Nullable="false" />
+    <Property Name="RID" Type="int" Nullable="false" />
+    <Property Name="Angle" Type="float" Nullable="false" />
+    <Property Name="Status" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Logs_User">
+    <End Role="User_Table" Type="Self.User_Table" Multiplicity="1" />
+    <End Role="Logs" Type="Self.Logs" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User_Table">
+        <PropertyRef Name="UID" />
+      </Principal>
+      <Dependent Role="Logs">
+        <PropertyRef Name="UID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Violation_Logs">
+    <End Role="Logs" Type="Self.Logs" Multiplicity="1" />
+    <End Role="Violation" Type="Self.Violation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Logs">
+        <PropertyRef Name="LID" />
+      </Principal>
+      <Dependent Role="Violation">
+        <PropertyRef Name="LID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Violation_Rules">
+    <End Role="Rules" Type="Self.Rules" Multiplicity="1" />
+    <End Role="Violation" Type="Self.Violation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Rules">
+        <PropertyRef Name="RID" />
+      </Principal>
+      <Dependent Role="Violation">
+        <PropertyRef Name="RID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="fn_diagramobjects" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int" />
+  <Function Name="sp_alterdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_creatediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_dropdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagramdefinition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_renamediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="new_diagramname" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <EntityContainer Name="KinectDatabaseModelStoreContainer">
+    <EntitySet Name="FrequencyTime" EntityType="Self.FrequencyTime" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="KeyStorke" EntityType="Self.KeyStorke" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Logs" EntityType="Self.Logs" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ProcessData" EntityType="Self.ProcessData" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RULATblA" EntityType="Self.RULATblA" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RULATblB" EntityType="Self.RULATblB" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RULATblC" EntityType="Self.RULATblC" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Rules" EntityType="Self.Rules" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="User_Table" EntityType="Self.User_Table" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Violation" EntityType="Self.Violation" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Logs_User" Association="Self.FK_Logs_User">
+      <End Role="User_Table" EntitySet="User_Table" />
+      <End Role="Logs" EntitySet="Logs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Violation_Logs" Association="Self.FK_Violation_Logs">
+      <End Role="Logs" EntitySet="Logs" />
+      <End Role="Violation" EntitySet="Violation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Violation_Rules" Association="Self.FK_Violation_Rules">
+      <End Role="Rules" EntitySet="Rules" />
+      <End Role="Violation" EntitySet="Violation" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

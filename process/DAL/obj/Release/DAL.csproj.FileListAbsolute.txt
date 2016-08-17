@@ -1,0 +1,10 @@
+G:\process(ok)\process\DAL\bin\Release\DAL.dll.config
+G:\process(ok)\process\DAL\bin\Release\DAL.dll
+G:\process(ok)\process\DAL\bin\Release\DAL.pdb
+G:\process(ok)\process\DAL\bin\Release\Entity.dll
+G:\process(ok)\process\DAL\bin\Release\EntityFramework.dll
+G:\process(ok)\process\DAL\bin\Release\Entity.pdb
+G:\process(ok)\process\DAL\bin\Release\EntityFramework.xml
+G:\process(ok)\process\DAL\obj\Release\DAL.csprojResolveAssemblyReference.cache
+G:\process(ok)\process\DAL\obj\Release\DAL.dll
+G:\process(ok)\process\DAL\obj\Release\DAL.pdb

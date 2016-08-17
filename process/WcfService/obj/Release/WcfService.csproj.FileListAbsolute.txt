@@ -1,0 +1,14 @@
+G:\process(ok)\process\WcfService\bin\WcfService.dll.config
+G:\process(ok)\process\WcfService\bin\WcfService.dll
+G:\process(ok)\process\WcfService\bin\WcfService.pdb
+G:\process(ok)\process\WcfService\bin\BLL.dll
+G:\process(ok)\process\WcfService\bin\Entity.dll
+G:\process(ok)\process\WcfService\bin\DAL.dll
+G:\process(ok)\process\WcfService\bin\EntityFramework.dll
+G:\process(ok)\process\WcfService\bin\BLL.pdb
+G:\process(ok)\process\WcfService\bin\Entity.pdb
+G:\process(ok)\process\WcfService\bin\DAL.pdb
+G:\process(ok)\process\WcfService\bin\EntityFramework.xml
+G:\process(ok)\process\WcfService\obj\Release\WcfService.csprojResolveAssemblyReference.cache
+G:\process(ok)\process\WcfService\obj\Release\WcfService.dll
+G:\process(ok)\process\WcfService\obj\Release\WcfService.pdb

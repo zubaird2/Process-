@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="KinectDatabaseModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="FrequencyTime">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TotalKeyStrokes" Type="Int32" Nullable="false" />
+    <Property Name="Time" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="KeyStorke">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="KeyValue" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Ascii" Type="Int32" Nullable="false" />
+    <Property Name="freq" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Log">
+    <Key>
+      <PropertyRef Name="LID" />
+    </Key>
+    <Property Name="LID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UID" Type="Int32" Nullable="false" />
+    <Property Name="StartTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EndTime" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="User_Table" Relationship="Self.FK_Logs_User" FromRole="Logs" ToRole="User_Table" />
+    <NavigationProperty Name="Violations" Relationship="Self.FK_Violation_Logs" FromRole="Logs" ToRole="Violation" />
+  </EntityType>
+  <EntityType Name="RULATblA">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UA" Type="Int32" Nullable="false" />
+    <Property Name="LA" Type="Int32" Nullable="false" />
+    <Property Name="WT11" Type="Int32" Nullable="false" />
+    <Property Name="WT12" Type="Int32" Nullable="false" />
+    <Property Name="WT21" Type="Int32" Nullable="false" />
+    <Property Name="WT22" Type="Int32" Nullable="false" />
+    <Property Name="WT31" Type="Int32" Nullable="false" />
+    <Property Name="WT32" Type="Int32" Nullable="false" />
+    <Property Name="WT41" Type="Int32" Nullable="false" />
+    <Property Name="WT42" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="RULATblB">
+    <Key>
+      <PropertyRef Name="Neck" />
+    </Key>
+    <Property Name="Neck" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="L11" Type="Int32" Nullable="false" />
+    <Property Name="L12" Type="Int32" Nullable="false" />
+    <Property Name="L21" Type="Int32" Nullable="false" />
+    <Property Name="L22" Type="Int32" Nullable="false" />
+    <Property Name="L31" Type="Int32" Nullable="false" />
+    <Property Name="L32" Type="Int32" Nullable="false" />
+    <Property Name="L41" Type="Int32" Nullable="false" />
+    <Property Name="L42" Type="Int32" Nullable="false" />
+    <Property Name="L51" Type="Int32" Nullable="false" />
+    <Property Name="L52" Type="Int32" Nullable="false" />
+    <Property Name="L61" Type="Int32" Nullable="false" />
+    <Property Name="L62" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="RULATblC">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="C1" Type="Int32" Nullable="false" />
+    <Property Name="C2" Type="Int32" Nullable="false" />
+    <Property Name="C3" Type="Int32" Nullable="false" />
+    <Property Name="C4" Type="Int32" Nullable="false" />
+    <Property Name="C5" Type="Int32" Nullable="false" />
+    <Property Name="C6" Type="Int32" Nullable="false" />
+    <Property Name="C7" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Rule">
+    <Key>
+      <PropertyRef Name="RID" />
+    </Key>
+    <Property Name="RID" Type="Int32" Nullable="false" />
+    <Property Name="Joint" Type="Int32" Nullable="false" />
+    <Property Name="RuleDesc" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LowRange" Type="Double" Nullable="false" />
+    <Property Name="HighRange" Type="Double" Nullable="false" />
+    <NavigationProperty Name="Violations" Relationship="Self.FK_Violation_Rules" FromRole="Rules" ToRole="Violation" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="User_Table">
+    <Key>
+      <PropertyRef Name="UID" />
+    </Key>
+    <Property Name="UID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Logs" Relationship="Self.FK_Logs_User" FromRole="User_Table" ToRole="Logs" />
+  </EntityType>
+  <EntityType Name="Violation">
+    <Key>
+      <PropertyRef Name="VID" />
+    </Key>
+    <Property Name="VID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="LID" Type="Int32" Nullable="false" />
+    <Property Name="RID" Type="Int32" Nullable="false" />
+    <Property Name="Angle" Type="Double" Nullable="false" />
+    <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Log" Relationship="Self.FK_Violation_Logs" FromRole="Violation" ToRole="Logs" />
+    <NavigationProperty Name="Rule" Relationship="Self.FK_Violation_Rules" FromRole="Violation" ToRole="Rules" />
+  </EntityType>
+  <Association Name="FK_Logs_User">
+    <End Role="User_Table" Type="Self.User_Table" Multiplicity="1" />
+    <End Role="Logs" Type="Self.Log" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User_Table">
+        <PropertyRef Name="UID" />
+      </Principal>
+      <Dependent Role="Logs">
+        <PropertyRef Name="UID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Violation_Logs">
+    <End Role="Logs" Type="Self.Log" Multiplicity="1" />
+    <End Role="Violation" Type="Self.Violation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Logs">
+        <PropertyRef Name="LID" />
+      </Principal>
+      <Dependent Role="Violation">
+        <PropertyRef Name="LID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Violation_Rules">
+    <End Role="Rules" Type="Self.Rule" Multiplicity="1" />
+    <End Role="Violation" Type="Self.Violation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Rules">
+        <PropertyRef Name="RID" />
+      </Principal>
+      <Dependent Role="Violation">
+        <PropertyRef Name="RID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="KinectDatabaseEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="FrequencyTimes" EntityType="Self.FrequencyTime" />
+    <EntitySet Name="KeyStorkes" EntityType="Self.KeyStorke" />
+    <EntitySet Name="Logs" EntityType="Self.Log" />
+    <EntitySet Name="RULATblAs" EntityType="Self.RULATblA" />
+    <EntitySet Name="RULATblBs" EntityType="Self.RULATblB" />
+    <EntitySet Name="RULATblCs" EntityType="Self.RULATblC" />
+    <EntitySet Name="Rules" EntityType="Self.Rule" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+    <EntitySet Name="User_Table" EntityType="Self.User_Table" />
+    <EntitySet Name="Violations" EntityType="Self.Violation" />
+    <AssociationSet Name="FK_Logs_User" Association="Self.FK_Logs_User">
+      <End Role="User_Table" EntitySet="User_Table" />
+      <End Role="Logs" EntitySet="Logs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Violation_Logs" Association="Self.FK_Violation_Logs">
+      <End Role="Logs" EntitySet="Logs" />
+      <End Role="Violation" EntitySet="Violations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Violation_Rules" Association="Self.FK_Violation_Rules">
+      <End Role="Rules" EntitySet="Rules" />
+      <End Role="Violation" EntitySet="Violations" />
+    </AssociationSet>
+    <FunctionImport Name="sp_alterdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_creatediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_dropdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagramdefinition">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagrams">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_renamediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="new_diagramname" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_upgraddiagrams" />
+    <EntitySet Name="ProcessDatas" EntityType="KinectDatabaseModel.ProcessData" />
+  </EntityContainer>
+  <EntityType Name="ProcessData">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProcessId" Type="Int32" Nullable="false" />
+    <Property Name="ProcessName" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="ProcessTitle" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="UId" Type="Int32" Nullable="false" />
+    <Property Name="StartActiveTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EndActiveTime" Type="DateTime" Precision="3" />
+    <Property Name="keyStroke" Type="Int32" />
+    <Property Name="P_Hieght" Type="Int32" />
+    <Property Name="P_Width" Type="Int32" />
+    <Property Name="MouseUseCount" Type="Int32" />
+    <Property Name="MouseTime" Type="Time" Precision="7" />
+  </EntityType>
+</Schema>

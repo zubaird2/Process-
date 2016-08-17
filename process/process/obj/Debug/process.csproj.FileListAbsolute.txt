@@ -1,0 +1,240 @@
+C:\Users\zahid\Documents\Visual Studio 2013\Projects\process\process\bin\Debug\process.exe
+C:\Users\zahid\Documents\Visual Studio 2013\Projects\process\process\bin\Debug\process.exe.config
+C:\Users\zahid\Documents\Visual Studio 2013\Projects\process\process\bin\Debug\process.pdb
+C:\Users\zahid\Documents\Visual Studio 2013\Projects\process\process\bin\Debug\EntityFramework.dll
+C:\Users\zahid\Documents\Visual Studio 2013\Projects\process\process\bin\Debug\EntityFramework.xml
+C:\Users\zahid\Documents\Visual Studio 2013\Projects\process\process\obj\Debug\MainWindow.baml
+C:\Users\zahid\Documents\Visual Studio 2013\Projects\process\process\obj\Debug\MainWindow.g.cs
+C:\Users\zahid\Documents\Visual Studio 2013\Projects\process\process\obj\Debug\App.g.cs
+C:\Users\zahid\Documents\Visual Studio 2013\Projects\process\process\obj\Debug\process_MarkupCompile.cache
+C:\Users\zahid\Documents\Visual Studio 2013\Projects\process\process\obj\Debug\process.g.resources
+C:\Users\zahid\Documents\Visual Studio 2013\Projects\process\process\obj\Debug\process.Properties.Resources.resources
+C:\Users\zahid\Documents\Visual Studio 2013\Projects\process\process\obj\Debug\process.csproj.GenerateResource.Cache
+C:\Users\zahid\Documents\Visual Studio 2013\Projects\process\process\obj\Debug\process.exe
+C:\Users\zahid\Documents\Visual Studio 2013\Projects\process\process\obj\Debug\process.pdb
+C:\Users\zahid\Documents\Visual Studio 2013\Projects\process\process\obj\Debug\process.csprojResolveAssemblyReference.cache
+C:\Users\zahid\Documents\Visual Studio 2013\Projects\process\process\obj\Debug\process_MarkupCompile.lref
+C:\Users\Sher\Documents\Visual Studio 2013\Projects\process\process\bin\Debug\process.exe.config
+C:\Users\Sher\Documents\Visual Studio 2013\Projects\process\process\obj\Debug\process.exe
+C:\Users\Sher\Documents\Visual Studio 2013\Projects\process\process\obj\Debug\process.pdb
+C:\Users\Sher\Documents\Visual Studio 2013\Projects\process\process\bin\Debug\process.exe
+C:\Users\Sher\Documents\Visual Studio 2013\Projects\process\process\bin\Debug\process.pdb
+C:\Users\Sher\Documents\Visual Studio 2013\Projects\process\process\bin\Debug\EntityFramework.dll
+C:\Users\Sher\Documents\Visual Studio 2013\Projects\process\process\bin\Debug\EntityFramework.xml
+C:\Users\Sher\Documents\Visual Studio 2013\Projects\process\process\obj\Debug\process.csprojResolveAssemblyReference.cache
+C:\Users\Sher\Documents\Visual Studio 2013\Projects\process\process\obj\Debug\MainWindow.g.cs
+C:\Users\Sher\Documents\Visual Studio 2013\Projects\process\process\obj\Debug\App.g.cs
+C:\Users\Sher\Documents\Visual Studio 2013\Projects\process\process\obj\Debug\process_MarkupCompile.cache
+C:\Users\Sher\Documents\Visual Studio 2013\Projects\process\process\obj\Debug\process_MarkupCompile.lref
+C:\Users\Sher\Documents\Visual Studio 2013\Projects\process\process\obj\Debug\MainWindow.baml
+C:\Users\Sher\Documents\Visual Studio 2013\Projects\process\process\obj\Debug\process.g.resources
+C:\Users\Sher\Documents\Visual Studio 2013\Projects\process\process\obj\Debug\process.Properties.Resources.resources
+C:\Users\Sher\Documents\Visual Studio 2013\Projects\process\process\obj\Debug\process.csproj.GenerateResource.Cache
+C:\Users\Sher\Documents\Visual Studio 2013\Projects\process\process\obj\Debug\process_Content.g.cs
+G:\process\process\bin\Debug\process.exe
+G:\process\process\bin\Debug\EntityFramework.dll
+G:\process\process\bin\Debug\process.exe.config
+G:\process\process\bin\Debug\process.pdb
+G:\process\process\bin\Debug\EntityFramework.xml
+G:\process\process\obj\Debug\MainWindow.g.cs
+G:\process\process\obj\Debug\App.g.cs
+G:\process\process\obj\Debug\process_MarkupCompile.cache
+G:\process\process\obj\Debug\process_MarkupCompile.lref
+G:\process\process\obj\Debug\MainWindow.baml
+G:\process\process\obj\Debug\process.g.resources
+G:\process\process\obj\Debug\process.Properties.Resources.resources
+G:\process\process\obj\Debug\process.csproj.GenerateResource.Cache
+G:\process\process\obj\Debug\process.exe
+G:\process\process\obj\Debug\process.pdb
+G:\process\process\obj\Debug\process.csprojResolveAssemblyReference.cache
+G:\Final Year Work Code backup\process(ok)\process\process\bin\Debug\process.exe.config
+G:\Final Year Work Code backup\process(ok)\process\process\bin\Debug\process.exe
+G:\Final Year Work Code backup\process(ok)\process\process\bin\Debug\process.pdb
+G:\Final Year Work Code backup\process(ok)\process\process\bin\Debug\EntityFramework.dll
+G:\Final Year Work Code backup\process(ok)\process\process\bin\Debug\EntityFramework.xml
+G:\Final Year Work Code backup\process(ok)\process\process\obj\Debug\MainWindow.g.cs
+G:\Final Year Work Code backup\process(ok)\process\process\obj\Debug\App.g.cs
+G:\Final Year Work Code backup\process(ok)\process\process\obj\Debug\process_MarkupCompile.cache
+G:\Final Year Work Code backup\process(ok)\process\process\obj\Debug\process_MarkupCompile.lref
+G:\Final Year Work Code backup\process(ok)\process\process\obj\Debug\MainWindow.baml
+G:\Final Year Work Code backup\process(ok)\process\process\obj\Debug\process.g.resources
+G:\Final Year Work Code backup\process(ok)\process\process\obj\Debug\process.Properties.Resources.resources
+G:\Final Year Work Code backup\process(ok)\process\process\obj\Debug\process.csproj.GenerateResource.Cache
+G:\Final Year Work Code backup\process(ok)\process\process\obj\Debug\process.exe
+G:\Final Year Work Code backup\process(ok)\process\process\obj\Debug\process.pdb
+C:\Users\Hassan\Dropbox\AIMRL Project\14-1-16\process(ok)\process\process\bin\Debug\process.exe.config
+C:\Users\Hassan\Dropbox\AIMRL Project\14-1-16\process(ok)\process\process\obj\Debug\process.exe
+C:\Users\Hassan\Dropbox\AIMRL Project\14-1-16\process(ok)\process\process\obj\Debug\process.pdb
+C:\Users\Hassan\Dropbox\AIMRL Project\14-1-16\process(ok)\process\process\bin\Debug\process.exe
+C:\Users\Hassan\Dropbox\AIMRL Project\14-1-16\process(ok)\process\process\bin\Debug\process.pdb
+C:\Users\Hassan\Dropbox\AIMRL Project\14-1-16\process(ok)\process\process\bin\Debug\EntityFramework.dll
+C:\Users\Hassan\Dropbox\AIMRL Project\14-1-16\process(ok)\process\process\bin\Debug\WPFToolkit.dll
+C:\Users\Hassan\Dropbox\AIMRL Project\14-1-16\process(ok)\process\process\bin\Debug\EntityFramework.xml
+C:\Users\Hassan\Dropbox\AIMRL Project\14-1-16\process(ok)\process\process\bin\Debug\System.Windows.Controls.DataVisualization.Toolkit.pdb
+C:\Users\Hassan\Dropbox\AIMRL Project\14-1-16\process(ok)\process\process\bin\Debug\WPFToolkit.pdb
+C:\Users\Hassan\Dropbox\AIMRL Project\14-1-16\process(ok)\process\process\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Hassan\Dropbox\AIMRL Project\14-1-16\process(ok)\process\process\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Hassan\Dropbox\AIMRL Project\14-1-16\process(ok)\process\process\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Hassan\Dropbox\AIMRL Project\14-1-16\process(ok)\process\process\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Hassan\Dropbox\AIMRL Project\14-1-16\process(ok)\process\process\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Hassan\Dropbox\AIMRL Project\14-1-16\process(ok)\process\process\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Hassan\Dropbox\AIMRL Project\14-1-16\process(ok)\process\process\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Hassan\Dropbox\AIMRL Project\14-1-16\process(ok)\process\process\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Hassan\Dropbox\AIMRL Project\14-1-16\process(ok)\process\process\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Hassan\Dropbox\AIMRL Project\14-1-16\process(ok)\process\process\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Hassan\Dropbox\AIMRL Project\14-1-16\process(ok)\process\process\obj\Debug\process.csprojResolveAssemblyReference.cache
+C:\Users\Hassan\Dropbox\AIMRL Project\14-1-16\process(ok)\process\process\obj\Debug\MainWindow.baml
+C:\Users\Hassan\Dropbox\AIMRL Project\14-1-16\process(ok)\process\process\obj\Debug\Panel.baml
+C:\Users\Hassan\Dropbox\AIMRL Project\14-1-16\process(ok)\process\process\obj\Debug\PI.baml
+C:\Users\Hassan\Dropbox\AIMRL Project\14-1-16\process(ok)\process\process\obj\Debug\report.baml
+C:\Users\Hassan\Dropbox\AIMRL Project\14-1-16\process(ok)\process\process\obj\Debug\MainWindow.g.cs
+C:\Users\Hassan\Dropbox\AIMRL Project\14-1-16\process(ok)\process\process\obj\Debug\Panel.g.cs
+C:\Users\Hassan\Dropbox\AIMRL Project\14-1-16\process(ok)\process\process\obj\Debug\PI.g.cs
+C:\Users\Hassan\Dropbox\AIMRL Project\14-1-16\process(ok)\process\process\obj\Debug\report.g.cs
+C:\Users\Hassan\Dropbox\AIMRL Project\14-1-16\process(ok)\process\process\obj\Debug\App.g.cs
+C:\Users\Hassan\Dropbox\AIMRL Project\14-1-16\process(ok)\process\process\obj\Debug\process_MarkupCompile.cache
+C:\Users\Hassan\Dropbox\AIMRL Project\14-1-16\process(ok)\process\process\obj\Debug\process.g.resources
+C:\Users\Hassan\Dropbox\AIMRL Project\14-1-16\process(ok)\process\process\obj\Debug\process.Properties.Resources.resources
+C:\Users\Hassan\Dropbox\AIMRL Project\14-1-16\process(ok)\process\process\obj\Debug\process.csproj.GenerateResource.Cache
+C:\Users\Hassan\Dropbox\AIMRL Project\14-1-16\process(ok)\process\process\obj\Debug\process.exe.licenses
+C:\Users\Areeba Moin\Dropbox\AIMRL Project\14-1-16\process(ok)\process\process\bin\Debug\process.exe.config
+C:\Users\Areeba Moin\Dropbox\AIMRL Project\14-1-16\process(ok)\process\process\obj\Debug\process.exe
+C:\Users\Areeba Moin\Dropbox\AIMRL Project\14-1-16\process(ok)\process\process\obj\Debug\process.pdb
+C:\Users\Areeba Moin\Dropbox\AIMRL Project\14-1-16\process(ok)\process\process\bin\Debug\process.exe
+C:\Users\Areeba Moin\Dropbox\AIMRL Project\14-1-16\process(ok)\process\process\bin\Debug\process.pdb
+C:\Users\Areeba Moin\Dropbox\AIMRL Project\14-1-16\process(ok)\process\process\bin\Debug\EntityFramework.dll
+C:\Users\Areeba Moin\Dropbox\AIMRL Project\14-1-16\process(ok)\process\process\bin\Debug\WPFToolkit.dll
+C:\Users\Areeba Moin\Dropbox\AIMRL Project\14-1-16\process(ok)\process\process\bin\Debug\EntityFramework.xml
+C:\Users\Areeba Moin\Dropbox\AIMRL Project\14-1-16\process(ok)\process\process\bin\Debug\System.Windows.Controls.DataVisualization.Toolkit.pdb
+C:\Users\Areeba Moin\Dropbox\AIMRL Project\14-1-16\process(ok)\process\process\bin\Debug\WPFToolkit.pdb
+C:\Users\Areeba Moin\Dropbox\AIMRL Project\14-1-16\process(ok)\process\process\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Areeba Moin\Dropbox\AIMRL Project\14-1-16\process(ok)\process\process\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Areeba Moin\Dropbox\AIMRL Project\14-1-16\process(ok)\process\process\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Areeba Moin\Dropbox\AIMRL Project\14-1-16\process(ok)\process\process\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Areeba Moin\Dropbox\AIMRL Project\14-1-16\process(ok)\process\process\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Areeba Moin\Dropbox\AIMRL Project\14-1-16\process(ok)\process\process\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Areeba Moin\Dropbox\AIMRL Project\14-1-16\process(ok)\process\process\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Areeba Moin\Dropbox\AIMRL Project\14-1-16\process(ok)\process\process\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Areeba Moin\Dropbox\AIMRL Project\14-1-16\process(ok)\process\process\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Areeba Moin\Dropbox\AIMRL Project\14-1-16\process(ok)\process\process\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Areeba Moin\Dropbox\AIMRL Project\14-1-16\process(ok)\process\process\obj\Debug\process.csprojResolveAssemblyReference.cache
+C:\Users\Areeba Moin\Dropbox\AIMRL Project\14-1-16\process(ok)\process\process\obj\Debug\MainWindow.baml
+C:\Users\Areeba Moin\Dropbox\AIMRL Project\14-1-16\process(ok)\process\process\obj\Debug\Panel.baml
+C:\Users\Areeba Moin\Dropbox\AIMRL Project\14-1-16\process(ok)\process\process\obj\Debug\PI.baml
+C:\Users\Areeba Moin\Dropbox\AIMRL Project\14-1-16\process(ok)\process\process\obj\Debug\report.baml
+C:\Users\Areeba Moin\Dropbox\AIMRL Project\14-1-16\process(ok)\process\process\obj\Debug\MainWindow.g.cs
+C:\Users\Areeba Moin\Dropbox\AIMRL Project\14-1-16\process(ok)\process\process\obj\Debug\Panel.g.cs
+C:\Users\Areeba Moin\Dropbox\AIMRL Project\14-1-16\process(ok)\process\process\obj\Debug\PI.g.cs
+C:\Users\Areeba Moin\Dropbox\AIMRL Project\14-1-16\process(ok)\process\process\obj\Debug\report.g.cs
+C:\Users\Areeba Moin\Dropbox\AIMRL Project\14-1-16\process(ok)\process\process\obj\Debug\App.g.cs
+C:\Users\Areeba Moin\Dropbox\AIMRL Project\14-1-16\process(ok)\process\process\obj\Debug\process_MarkupCompile.cache
+C:\Users\Areeba Moin\Dropbox\AIMRL Project\14-1-16\process(ok)\process\process\obj\Debug\process.g.resources
+C:\Users\Areeba Moin\Dropbox\AIMRL Project\14-1-16\process(ok)\process\process\obj\Debug\process.Properties.Resources.resources
+C:\Users\Areeba Moin\Dropbox\AIMRL Project\14-1-16\process(ok)\process\process\obj\Debug\process.csproj.GenerateResource.Cache
+C:\Users\Areeba Moin\Dropbox\AIMRL Project\14-1-16\process(ok)\process\process\obj\Debug\process.exe.licenses
+G:\backup\3-1-16\process(ok)\process\process\bin\Debug\process.exe.config
+G:\backup\3-1-16\process(ok)\process\process\obj\Debug\process.exe
+G:\backup\3-1-16\process(ok)\process\process\obj\Debug\process.pdb
+H:\process(ok)\process\process\bin\Debug\process.exe.config
+H:\process(ok)\process\process\obj\Debug\process.exe
+H:\process(ok)\process\process\obj\Debug\process.pdb
+H:\process(ok)\process\process\bin\Debug\process.exe
+H:\process(ok)\process\process\bin\Debug\process.pdb
+H:\process(ok)\process\process\bin\Debug\Entity.dll
+H:\process(ok)\process\process\bin\Debug\EntityFramework.dll
+H:\process(ok)\process\process\bin\Debug\System.Windows.Controls.DataVisualization.Toolkit.dll
+H:\process(ok)\process\process\bin\Debug\Xceed.Wpf.Toolkit.dll
+H:\process(ok)\process\process\bin\Debug\WPFToolkit.dll
+H:\process(ok)\process\process\bin\Debug\Entity.pdb
+H:\process(ok)\process\process\bin\Debug\EntityFramework.xml
+H:\process(ok)\process\process\bin\Debug\System.Windows.Controls.DataVisualization.Toolkit.pdb
+H:\process(ok)\process\process\bin\Debug\WPFToolkit.pdb
+H:\process(ok)\process\process\obj\Debug\process.csprojResolveAssemblyReference.cache
+H:\process(ok)\process\process\obj\Debug\MainWindow.baml
+H:\process(ok)\process\process\obj\Debug\Panel.baml
+H:\process(ok)\process\process\obj\Debug\MainWindow.g.cs
+H:\process(ok)\process\process\obj\Debug\Panel.g.cs
+H:\process(ok)\process\process\obj\Debug\App.g.cs
+H:\process(ok)\process\process\obj\Debug\process_MarkupCompile.cache
+H:\process(ok)\process\process\obj\Debug\process.g.resources
+H:\process(ok)\process\process\obj\Debug\process.Properties.Resources.resources
+H:\process(ok)\process\process\obj\Debug\process.csproj.GenerateResource.Cache
+H:\process(ok)\process\process\obj\Debug\process.exe.licenses
+G:\backup zahid\11-5-16\process(ok)\process\process\bin\Debug\process.exe.config
+G:\backup zahid\11-5-16\process(ok)\process\process\obj\Debug\process.exe
+G:\backup zahid\11-5-16\process(ok)\process\process\obj\Debug\process.pdb
+F:\process(ok)\process\process\bin\Debug\process.exe.config
+F:\process(ok)\process\process\obj\Debug\process.exe
+F:\process(ok)\process\process\obj\Debug\process.pdb
+F:\process(ok)\process\process\bin\Debug\process.exe
+F:\process(ok)\process\process\bin\Debug\process.pdb
+F:\process(ok)\process\process\bin\Debug\Entity.dll
+F:\process(ok)\process\process\bin\Debug\EntityFramework.dll
+F:\process(ok)\process\process\bin\Debug\System.Windows.Controls.DataVisualization.Toolkit.dll
+F:\process(ok)\process\process\bin\Debug\Xceed.Wpf.Toolkit.dll
+F:\process(ok)\process\process\bin\Debug\WPFToolkit.dll
+F:\process(ok)\process\process\bin\Debug\Entity.pdb
+F:\process(ok)\process\process\bin\Debug\EntityFramework.xml
+F:\process(ok)\process\process\bin\Debug\System.Windows.Controls.DataVisualization.Toolkit.pdb
+F:\process(ok)\process\process\bin\Debug\WPFToolkit.pdb
+F:\process(ok)\process\process\obj\Debug\process.csprojResolveAssemblyReference.cache
+F:\process(ok)\process\process\obj\Debug\MainWindow.baml
+F:\process(ok)\process\process\obj\Debug\Panel.baml
+F:\process(ok)\process\process\obj\Debug\MainWindow.g.cs
+F:\process(ok)\process\process\obj\Debug\Panel.g.cs
+F:\process(ok)\process\process\obj\Debug\App.g.cs
+F:\process(ok)\process\process\obj\Debug\process_MarkupCompile.cache
+F:\process(ok)\process\process\obj\Debug\process.g.resources
+F:\process(ok)\process\process\obj\Debug\process.Properties.Resources.resources
+F:\process(ok)\process\process\obj\Debug\process.csproj.GenerateResource.Cache
+F:\process(ok)\process\process\obj\Debug\process.exe.licenses
+G:\process(ok)\process\process\bin\Debug\process.exe.config
+G:\process(ok)\process\process\bin\Debug\process.exe
+G:\process(ok)\process\process\bin\Debug\process.pdb
+G:\process(ok)\process\process\bin\Debug\Entity.dll
+G:\process(ok)\process\process\bin\Debug\EntityFramework.dll
+G:\process(ok)\process\process\bin\Debug\System.Windows.Controls.DataVisualization.Toolkit.dll
+G:\process(ok)\process\process\bin\Debug\Xceed.Wpf.Toolkit.dll
+G:\process(ok)\process\process\bin\Debug\WPFToolkit.dll
+G:\process(ok)\process\process\bin\Debug\Entity.pdb
+G:\process(ok)\process\process\bin\Debug\EntityFramework.xml
+G:\process(ok)\process\process\bin\Debug\System.Windows.Controls.DataVisualization.Toolkit.pdb
+G:\process(ok)\process\process\bin\Debug\WPFToolkit.pdb
+G:\process(ok)\process\process\obj\Debug\process.csprojResolveAssemblyReference.cache
+G:\process(ok)\process\process\obj\Debug\MainWindow.baml
+G:\process(ok)\process\process\obj\Debug\Panel.baml
+G:\process(ok)\process\process\obj\Debug\App.baml
+G:\process(ok)\process\process\obj\Debug\MainWindow.g.cs
+G:\process(ok)\process\process\obj\Debug\Panel.g.cs
+G:\process(ok)\process\process\obj\Debug\App.g.cs
+G:\process(ok)\process\process\obj\Debug\process_MarkupCompile.cache
+G:\process(ok)\process\process\obj\Debug\process.g.resources
+G:\process(ok)\process\process\obj\Debug\process.Properties.Resources.resources
+G:\process(ok)\process\process\obj\Debug\process.csproj.GenerateResource.Cache
+G:\process(ok)\process\process\obj\Debug\process.exe.licenses
+G:\process(ok)\process\process\obj\Debug\process.exe
+G:\process(ok)\process\process\obj\Debug\process.pdb
+F:\Project\process(ok)\process\process\bin\Debug\process.exe.config
+F:\Project\process(ok)\process\process\obj\Debug\process.exe
+F:\Project\process(ok)\process\process\obj\Debug\process.pdb
+F:\Project\process(ok)\process\process\bin\Debug\process.exe
+F:\Project\process(ok)\process\process\bin\Debug\process.pdb
+F:\Project\process(ok)\process\process\bin\Debug\Entity.dll
+F:\Project\process(ok)\process\process\bin\Debug\EntityFramework.dll
+F:\Project\process(ok)\process\process\bin\Debug\WPFToolkit.dll
+F:\Project\process(ok)\process\process\bin\Debug\Entity.pdb
+F:\Project\process(ok)\process\process\bin\Debug\EntityFramework.xml
+F:\Project\process(ok)\process\process\bin\Debug\System.Windows.Controls.DataVisualization.Toolkit.pdb
+F:\Project\process(ok)\process\process\bin\Debug\WPFToolkit.pdb
+F:\Project\process(ok)\process\process\obj\Debug\process.csprojResolveAssemblyReference.cache
+F:\Project\process(ok)\process\process\obj\Debug\MainWindow.baml
+F:\Project\process(ok)\process\process\obj\Debug\Panel.baml
+F:\Project\process(ok)\process\process\obj\Debug\App.baml
+F:\Project\process(ok)\process\process\obj\Debug\MainWindow.g.cs
+F:\Project\process(ok)\process\process\obj\Debug\Panel.g.cs
+F:\Project\process(ok)\process\process\obj\Debug\App.g.cs
+F:\Project\process(ok)\process\process\obj\Debug\process_MarkupCompile.cache
+F:\Project\process(ok)\process\process\obj\Debug\process.g.resources
+F:\Project\process(ok)\process\process\obj\Debug\process.Properties.Resources.resources
+F:\Project\process(ok)\process\process\obj\Debug\process.csproj.GenerateResource.Cache
+F:\Project\process(ok)\process\process\obj\Debug\process.exe.licenses

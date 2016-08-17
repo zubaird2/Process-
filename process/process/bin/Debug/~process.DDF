@@ -1,0 +1,41 @@
+;Auto-generated Diamond Directive File. Can be deleted without harm.
+.Set CabinetNameTemplate=G:\process(ok)\process\process\bin\Debug\~process.CAB
+.Set CompressionType=LZX
+.Set CompressionLevel=7
+.Set InfFileName=G:\process(ok)\process\process\bin\Debug\~process_LAYOUT.INF
+.Set RptFileName=G:\process(ok)\process\process\bin\Debug\~process.RPT
+.Set MaxDiskSize=CDROM
+.Set ReservePerCabinetSize=0
+.Set InfCabinetLineFormat=*cab#*=Application Source Media,*cabfile*,0
+.Set Compress=on
+.Set CompressionMemory=21
+.Set DiskDirectoryTemplate=
+.Set Cabinet=ON
+.Set MaxCabinetSize=999999999
+.Set InfDiskHeader=
+.Set InfDiskLineFormat=
+.Set InfCabinetHeader=[SourceDisksNames]
+.Set InfFileHeader=
+.Set InfFileHeader1=[SourceDisksFiles]
+.Set InfFileLineFormat=*file*=*cab#*,,*size*,*csum*
+"G:\process(ok)\process\process\bin\Debug\App.config"
+"G:\process(ok)\process\process\bin\Debug\App.xaml"
+"G:\process(ok)\process\process\bin\Debug\EntityFramework.dll"
+"G:\process(ok)\process\process\bin\Debug\EntityFramework.xml"
+"G:\process(ok)\process\process\bin\Debug\process.exe"
+"G:\process(ok)\process\process\bin\Debug\process.exe.config"
+"G:\process(ok)\process\process\bin\Debug\process.pdb"
+"G:\process(ok)\process\process\bin\Debug\process.vshost.exe"
+"G:\process(ok)\process\process\bin\Debug\process.vshost.exe.config"
+"G:\process(ok)\process\process\bin\Debug\process.vshost.exe.manifest"
+"G:\process(ok)\process\process\bin\Debug\sample.txt"
+"G:\process(ok)\process\process\bin\Debug\System.Windows.Controls.DataVisualization.Toolkit.dll"
+"G:\process(ok)\process\process\bin\Debug\System.Windows.Controls.DataVisualization.Toolkit.pdb"
+"G:\process(ok)\process\process\bin\Debug\WPFToolkit.dll"
+"G:\process(ok)\process\process\bin\Debug\WPFToolkit.pdb"
+"G:\process(ok)\process\process\bin\Debug\Xceed.Wpf.AvalonDock.dll"
+"G:\process(ok)\process\process\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll"
+"G:\process(ok)\process\process\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll"
+"G:\process(ok)\process\process\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll"
+"G:\process(ok)\process\process\bin\Debug\Xceed.Wpf.DataGrid.dll"
+"G:\process(ok)\process\process\bin\Debug\Xceed.Wpf.Toolkit.dll"

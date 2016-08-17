@@ -1,0 +1,36 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="AIM ERGOTECH" Height="400" Width="400" x:Class="process.MainWindow" Icon=".\images\AIM ERGOTECH.png">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource=".\images\blue_abstract_background.jpg"/>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="130*"/>
+            <ColumnDefinition Width="200*"/>
+            <ColumnDefinition Width="70*"/>
+
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+
+            <RowDefinition Height="75*"></RowDefinition>
+            <RowDefinition Height="170*"></RowDefinition>
+            <RowDefinition Height="75*"></RowDefinition>
+            <RowDefinition Height="60*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Label Content="Introduction"  FontStyle="Italic" FontSize="18" FontWeight="Bold" HorizontalAlignment="Center"  VerticalAlignment="Top" Grid.Row="1" Grid.Column="0" />
+
+        <TextBlock TextWrapping="Wrap" TextAlignment="Justify" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" Grid.Column="1" Text="This application store and present information about usage of different application that you are running." />
+
+        <Button Background="Transparent" BorderThickness="0" Click="Start" Grid.Row="2" Grid.Column="2">
+            <Button.Content>
+                <Image Source=".\images\images (3).jpg" />
+            </Button.Content>
+        </Button>
+
+
+
+
+    </Grid>
+</Window>

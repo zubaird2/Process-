@@ -1,0 +1,10 @@
+G:\process(ok)\process\Entity\bin\Debug\Entity.dll
+G:\process(ok)\process\Entity\bin\Debug\Entity.pdb
+G:\process(ok)\process\Entity\obj\Debug\Entity.dll
+G:\process(ok)\process\Entity\obj\Debug\Entity.pdb
+G:\process(ok)\process\Entity\obj\Debug\Entity.csprojResolveAssemblyReference.cache
+F:\Project\process(ok)\process\Entity\bin\Debug\Entity.dll
+F:\Project\process(ok)\process\Entity\bin\Debug\Entity.pdb
+F:\Project\process(ok)\process\Entity\obj\Debug\Entity.csprojResolveAssemblyReference.cache
+F:\Project\process(ok)\process\Entity\obj\Debug\Entity.dll
+F:\Project\process(ok)\process\Entity\obj\Debug\Entity.pdb

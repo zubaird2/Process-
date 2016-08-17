@@ -1,0 +1,527 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+
+<div id="page-wrapper">
+
+    <div class="row">
+        <div class="col-lg-12">
+            <h2 class="page-header"><i class="fa fa-dashboard fa-x"></i>Dashboard</h2>
+        </div>
+        <div class="col-lg-12">
+            <div class="panel panel-info ">
+                <div class="panel-heading">
+                    Select Duration And User Id
+                </div>
+                <div class="panel-body">
+                    <div class="form-group form-inline">
+                        <table>
+                            <tr>
+                                <td class="col-lg-2"><label for="datef">From: </label><input type="date" class="form-control" placeholder="From" id="datef"></td>
+
+
+                                <td class="col-lg-2"><label for="datet">To: </label><input type="date" class="form-control" placeholder="From" id="datet"></td>
+
+
+                                <td class="col-lg-2"><label for="datef">User Id: </label><input type="number" class="form-control" placeholder="User ID" id="UserId"></td>
+
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-xs-3">
+                            <i class="fa fa-database fa-5x"></i>
+                        </div>
+                        <div class="col-xs-9 text-right">
+                            <div>Logs</div>
+                        </div>
+                    </div>
+                </div>
+                    <div class="panel-footer" id="ViewLogs">
+                        <span class="pull-left">View Logs </span>
+                        <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                        <div class="clearfix"></div>
+                    </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-xs-3">
+                            <i class="fa fa-photo fa-5x"></i>
+                        </div>
+                        <div class="col-xs-9 text-right">
+                            <div>ScreenShots</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-footer" id="ViewScreenShot">
+                    <span class="pull-left">View ScreenShots</span>
+                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-xs-3">
+                            <i class="fa fa-pie-chart fa-5x"></i>
+                        </div>
+                        <div class="col-xs-9 text-right">
+                            <div>Report</div>
+                        </div>
+                    </div>
+                </div>
+                    <div class="panel-footer" id="chrt">
+                        <span class="pull-left">View Reports</span>
+                        <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                        <div class="clearfix"></div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- /#page-wrapper -->
+</div>
+<!-- /#wrapper -->
+
+<script src="~/Content/bower_components/datatables/media/js/jquery.dataTables.min.js"></script>
+<script src="~/Content/bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.min.js"></script>
+
+<script src="~/Scripts/moment.js"></script>
+<script src="~/Scripts/lightbox.js"></script>
+<script>
+    $(document).ready(function () {
+
+        $(window).load(function () {
+            $(".se-pre-con").fadeOut("slow");
+        });
+
+
+        $("#ViewLogs").click(function () {
+
+            var s = $("#datef").val();
+            var e = $("#datet").val();
+            var uid = $("#UserId").val();
+            debugger;
+            if (s != "" && e != "" && uid != "") {
+                var setting = {
+                    type: "GET",
+                    async: false,
+                    data: "",
+                    url: "/Home/ViewLogsWithDate_Id/?s=" + s + "&e=" + e + "&uid=" + uid,
+                    success: function (d) {
+                        debugger;
+                        if (document.getElementById("CD") != null) {
+                            document.getElementById("CD").remove();
+                        }
+                        if (document.getElementById("SD") != null) {
+                            document.getElementById("SD").remove();
+                        }
+                        if (document.getElementById("LD") != null) {
+                            document.getElementById("LD").remove();
+                        }
+                        var $LogsDiv = ("<div class='row' id='LD'>" +
+                                            "<div class='col-lg-12'>" +
+                                                "<div class='panel panel-green' id='ld'>" +
+                                                    "<div class='panel-heading'>" +
+                                                        "Logs of User(s)" +
+                                                    "</div>" +
+                                                    "<div class='panel-body'>" +
+                                                        "<div class='dataTable_wrapper'>" +
+                                                            "<table class='table table-striped table-bordered table-hover' id='AllLogs'>" +
+                                                                "<thead>" +
+                                                                    "<tr class='danger'>" +
+                                                                        "<th>Sr. No.</th>" +
+                                                                        "<th>UserId</th>" +
+                                                                        "<th>Process Name</th>" +
+                                                                        //"<th>Window Title </th>" +
+                                                                        "<th>% Windows Active Time</th>" +
+                                                                        "<th>% Key Strokes</th>" +
+                                                                        "<th>% Mouse Usage Time</th>" +
+                                                                        "<th>% Mouse Usage Count</th>" +
+                                                                    "</tr>" +
+                                                                "</thead>" +
+                                                                "<tbody id='logstbody'>" +
+                                                                "</tbody>" +
+                                                            "<table>" +
+                                                        "</div>" +
+                                                    "</div>" +
+                                                "</div>" +
+                                            "</div>" +
+                                        "</div>");
+
+                        $("#page-wrapper").append($LogsDiv);
+
+                        for (var i = 0; i < d.length; i++) {
+                            var $abc = $("<tr class='odd gradeX alert-success'>" +
+                                        "<td>" + d[i].Id + "</td>" +
+                                        "<td>" + d[i].UserId + "</td>" +
+                                        "<td>" + d[i].ProcessName + "</td>" +
+                                        //"<td>" + d[i].ProcessTitle + "</td>" +
+                                        "<td>" + d[i].PercentageProcessActiveTime + "</td>" +
+                                        "<td>" + d[i].PerKeyStroke + "</td>" +
+                                        "<td>" + d[i].PercentageMouseTime + "</td>" +
+                                        "<td>" + d[i].PerMouseCount + "</td>" +
+                                        "</tr>");
+
+                            $("#logstbody").append($abc);
+
+                     
+                        }
+
+                        $('#AllLogs').DataTable({
+                            responsive: true
+                        });
+
+                    },
+
+                    error: function () {
+                        alert("error");
+                    }
+                }
+            }
+            else {
+                swal({
+                    title: "Error",
+                    text: "Please select Dates and User Id",
+                    type: "info",
+                    timer: 3000
+                });
+            }
+            $.ajax(setting);
+        });
+        $("#ViewScreenShot").click(function () {
+
+            var s = $("#datef").val();
+            var e = $("#datet").val();
+            var uid = $("#UserId").val();
+            debugger;
+            if (s != "" && e != "" && uid != "") {
+                var setting = {
+                    type: "GET",
+                    async: false,
+                    data: "",
+                    url: "/Home/ViewScreenShotsWithDate_Id/?s=" + s + "&e=" + e + "&uid=" + uid,
+                    success: function (d) {
+                        debugger;
+                        if (document.getElementById("CD") != null) {
+                            document.getElementById("CD").remove();
+                        }
+                        if (document.getElementById("SD") != null) {
+                            document.getElementById("SD").remove();
+                        }
+                        if (document.getElementById("LD") != null) {
+                            document.getElementById("LD").remove();
+                        }
+                        var $ScreenshotsDiv = ("<div class='row' id='SD'>" +
+                                                    "<div class='col-lg-12'>" +
+                                                        "<div class='panel panel-green'>" +
+                                                            "<div class='panel-heading'>" +
+                                                                "Screen Shots(s)" +
+                                                            "</div>" +
+                                                            "<div class='panel-body'>" +
+                                                                "<div class='dataTable_wrapper'>" +
+                                                                    "<table class='table table-hover' id='Screenshots'>" +
+                                                                        "<thead>" +
+                                                                            "<tr class='table-bordered alert-danger'>" +
+                                                                                "<th>ScreenShots</th>" +
+                                                                            "</tr>" +
+                                                                        "</thead>" +
+                                                                        "<tbody id='stbody'>" +
+                                                                        "</tbody>" +
+                                                                    "<table>"+
+                                                                "</div>" +
+                                                            "</div>" +
+                                                        "</div>" +
+                                                    "</div>" +
+                                               "</div>");
+
+
+                        $("#page-wrapper").append($ScreenshotsDiv);
+                        for (var i = 0; i < d.length; i++) {
+                            var $abc = $("<tr class='odd gradeX col-lg-3 alert-success'>" +
+                                            "<td>" +
+                                                "<a href=" + d[i].img + " data-lightbox='example-set' data-title='ScreenShot'>" +
+                                                    "<img src=" + d[i].img + " width='100%' height='10%' />" +
+                                                    "<p>" + moment(d[i].Time).format('MMMM Do YYYY, h:mm:ss a') + " UserId=" + d[i].UId + "</p>" +
+                                                "</a>" +
+                                            "</td>" +
+                                        "</tr>"
+                                       );
+
+
+                            $("#stbody").append($abc);
+                        }
+
+                        $('#Screenshots').DataTable({
+                            responsive: true
+                        });
+                    },
+
+                    error: function () {
+                        alert("error");
+                    }
+                }
+            }
+            else {
+                swal({
+                    title: "Error",
+                    text: "Please select Dates and User Id",
+                    type: "info",
+                    timer: 3000
+                });
+            }
+            $.ajax(setting);
+        });
+        $("#chrt").click(function () {
+            var s = $("#datef").val();
+            var e = $("#datet").val();
+            var uid = $("#UserId").val();
+            debugger;
+            if (s != "" && e != "" && uid != "") {
+                var setting = {
+                    type: "GET",
+                    async: false,
+                    data: "",
+                    url: "/Home/GetDataForChart/?s=" + s + "&e=" + e + "&uid=" + uid,
+                    success: function (d, a) {
+                        if (document.getElementById("CD") != null) {
+                            document.getElementById("CD").remove();
+                        }
+                        if (document.getElementById("SD") != null)
+                        {
+                            document.getElementById("SD").remove();
+                        }
+                        if (document.getElementById("LD") != null) {
+                            document.getElementById("LD").remove();
+                        }
+                        var $cdiv = ("<div class='row' id='CD'>" +
+                             "<div class='col-lg-12'>"+
+                                "<div class='panel panel-green'>" +
+                                    "<div class='panel-heading'>" +
+                                        "Report" +
+                                    "</div>" +
+                                    "<div class='panel-body' id='container'>" +
+                                    "</div>" +
+                                "</div>"+
+                         "</div>");
+                        $("#page-wrapper").append($cdiv);
+                        var dp = [];
+                        var cp = [];
+                        var sumtp = 0;
+                        var du = [];
+                        var cu = [];
+                        var sumtu = 0;
+                        var dud = [];
+                        var cud = [];
+                        var sumtud = 0;
+                        for (var i = 0; i < d.length; i++) {
+                            var v = d[i].Key.split(',');
+                            if (v[1] == 'p') {
+                                cp.push(v[0]);
+                                dp.push(d[i].Value);
+                                sumtp = sumtp + d[i].Value;
+                            }
+                            else if (v[1] == 'u') {
+                                cu.push(v[0]);
+                                du.push(d[i].Value);
+                                sumtu = sumtu + d[i].Value;
+                            }
+                            else {
+                                cud.push(v[0]);
+                                dud.push(d[i].Value);
+                                sumtud = sumtud + d[i].Value;
+                            }
+                        }
+
+                        var colors = Highcharts.getOptions().colors,
+                   categories = ['Productive', 'UnProductive', 'Other'],
+                   data = [{
+                       y: sumtp,
+                       color: colors[2],
+                       drilldown: {
+                           name: 'Productive',
+                           categories: cp,
+                           data: dp,
+                           color: colors[2]
+                       }
+                   }, {
+                       y: sumtu,
+                       color: colors[3],
+                       drilldown: {
+                           name: 'UnProductive',
+                           categories: cu,
+                           data: du,
+                           color: colors[3]
+                       }
+                   }, {
+                       y: sumtud,
+                       color: colors[4],
+                       drilldown: {
+                           name: 'Undefine',
+                           categories: cud,
+                           data: dud,
+                           color: colors[4]
+                       }
+
+                   }],
+                   TotalTime = [],
+                   AppTime = [],
+                   i,
+                   j,
+                   dataLen = data.length,
+                   drillDataLen,
+                   brightness;
+
+
+                        // Build the data arrays
+                        for (i = 0; i < dataLen; i += 1) {
+
+                            // add browser data
+                            TotalTime.push({
+                                name: categories[i],
+                                y: data[i].y,
+                                color: data[i].color
+                            });
+
+                            // add version data
+                            drillDataLen = data[i].drilldown.data.length;
+                            for (j = 0; j < drillDataLen; j += 1) {
+                                brightness = 0.2 - (j / drillDataLen) / 5;
+                                AppTime.push({
+                                    name: data[i].drilldown.categories[j],
+                                    y: data[i].drilldown.data[j],
+                                    color: Highcharts.Color(data[i].color).brighten(brightness).get()
+                                });
+                            }
+                        }
+
+                        // Create the chart
+                        $('#container').highcharts({
+                            chart: {
+                                type: 'pie'
+                            },
+                            title: {
+                                text: "% View of Usage of Productive,UnProductive and Other Application"
+                            },
+
+                            subtitle: {
+                                text: 'In term of % Time'
+                            },
+                            plotOptions: {
+                                pie: {
+                                    shadow: false,
+                                    center: ['50%', '50%']
+                                }
+                            },
+                            tooltip: {
+                                valueSuffix: '%'
+                            },
+                            series: [{
+                                name: '% Usage Time',
+                                data: TotalTime,
+                                size: '60%',
+                                dataLabels: {
+                                    formatter: function () {
+                                        return this.y > 5 ? this.point.name : null;
+                                    },
+                                    color: '#ffffff',
+                                    distance: -30
+                                }
+                            }, {
+                                name: '% Usage Time',
+                                data: AppTime,
+                                size: '90%',
+                                innerSize: '60%',
+                                dataLabels: {
+                                    formatter: function () {
+                                        // display only if larger than 1
+                                        return this.y > 1 ? '<b>' + this.point.name + ':</b> ' + this.y + '%' : null;
+                                    }
+                                }
+                            }]
+                        });
+                    },
+
+                    error: function () {
+                        alert("error");
+                    }
+                }
+                $.ajax(setting);
+
+            }
+            else {
+                swal({
+                    title: "Error",
+                    text: "Please select Dates and User Id",
+                    type: "info",
+                    timer: 3000
+                });
+            }
+        });
+
+        $("#update").click(function () {
+            var pp = $("#ppassword").val();
+            var np = $("#npassword").val();
+            debugger;
+            if (pp != "" && np != "") {
+                var setting = {
+                    type: "GET",
+                    async: false,
+                    data: "",
+                    url: "/Home/UpdatePassword/?pp=" + pp + "&np=" + np,
+                    success: function (d) {
+                      
+                        if (d) {
+                            swal({
+                                title: "Success",
+                                text: "Password is updated successfully",
+                                type: "success",
+                                timer: 3000
+                            });
+                        }
+                        if (!d) {
+                            swal({
+                                title: "Error",
+                                text: "Previous Password is incorrect",
+                                type: "info",
+                            timer:3000});
+                        }
+                        },
+
+                    error: function () {
+                        alert("error");
+                    }
+                }
+            }
+            else {
+                alert("Please Enter Password");
+            }
+            $.ajax(setting);
+
+
+        });
+
+      
+    });
+    function preventBack() { window.history.forward(); }
+    setTimeout("preventBack()", 0);
+    window.onunload = function () { null };
+</script>
+
+<script src="~/Scripts/highcharts.js"></script>

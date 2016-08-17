@@ -1,0 +1,70 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:DV="clr-namespace:System.Windows.Controls.DataVisualization;assembly=System.Windows.Controls.DataVisualization.Toolkit"   
+    xmlns:DVC="clr-namespace:System.Windows.Controls.DataVisualization.Charting;assembly=System.Windows.Controls.DataVisualization.Toolkit" x:Class="process.Panel"
+        Title="AIM ERGOTECH-Panel" Height="400" Width="400" Closed="close" Icon=".\images\AIM ERGOTECH.png">
+
+
+
+
+    <Grid Name="g1">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100*"/>
+            <ColumnDefinition Width="200*"/>
+            <ColumnDefinition Width="100*"/>
+
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+
+            <RowDefinition Height="40*"></RowDefinition>
+            <RowDefinition Height="60*"></RowDefinition>
+            <RowDefinition Height="75*"></RowDefinition>
+            <RowDefinition Height="75*"></RowDefinition>
+            <RowDefinition Height="75*"></RowDefinition>
+            <RowDefinition Height="60*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource=".\images\blue_abstract_background.jpg"/>
+        </Grid.Background>
+        <!--<Menu IsMainMenu="True" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3">
+            <MenuItem Header="Home" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Height="30" Click="Web_Home" />
+            <MenuItem Header="Logs" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Height="30" Click="Web_Logs"/>
+            <MenuItem Header="ScreenShots" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Height="30" Click="Web_Screenshots"/>
+            <MenuItem Header="Report" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Height="30" Click="Web_Report"/>
+            <MenuItem Header="Setting" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Height="30" Click="Web_Setting"/>
+        </Menu>-->
+        <ToggleButton  Background="Transparent"  VerticalAlignment="Center" BorderThickness="0"  Checked="Start" Unchecked="Stop" Height="80" Width="98" Grid.Row="3"  >
+            <ToggleButton.Content>
+                <Image Source=".\images\ss.png" Height="70" Width="63"/>
+            </ToggleButton.Content>
+        </ToggleButton>
+
+
+        <Border ClipToBounds="True" CornerRadius="70" HorizontalAlignment="Center" Background="LightSkyBlue" Height="60" Grid.Column="1" Grid.Row="2" >
+            <Canvas  HorizontalAlignment="Left"   Width="205"  >
+                <!--<Label Content="Mouse Usage count:" Canvas.Left="9"  Width="122" Canvas.Top="31"/>
+                            <Label x:Name="xhc" Content="0" Canvas.Left="135" Width="60" Canvas.Top="31" />-->
+                <Label Content="ScreenShot =" Canvas.Left="20"  Width="122" Canvas.Top="13"/>
+                <Label x:Name="s" Content="Stop" Canvas.Left="98" Width="107" Canvas.Top="13" />
+            </Canvas>
+        </Border>
+        <Border ClipToBounds="True" CornerRadius="70" HorizontalAlignment="Center" VerticalAlignment="Center" Background="LightSkyBlue" Height="60" Grid.Column="1" Grid.Row="3" >
+            <Canvas  HorizontalAlignment="Left"   Width="205"  >
+                <!--<Label Content="Mouse Usage Time:"  Width="117" Canvas.Top="29" Canvas.Left="2"/>-->
+                <!--<Label x:Name="xmtime" Content="00:00:00.00" Canvas.Left="114" Width="101" Canvas.Top="30" />-->
+                <Label Content="Process Recording ="  Width="117" Canvas.Top="15" Canvas.Left="10"/>
+                <Label x:Name="p" Content="Stop" Canvas.Left="127" Width="101" Canvas.Top="15" />
+            </Canvas>
+        </Border>
+        <Border ClipToBounds="True" CornerRadius="70" HorizontalAlignment="Center" VerticalAlignment="Center" Background="LightSkyBlue"  Name="brdEtikett" Height="60" Grid.Column="1" Grid.Row="4">
+            <Canvas HorizontalAlignment="Left"   Width="205">
+                <!--<Label Content="KeyStroke:" Canvas.Left="11"  Width="74" Canvas.Top="30"/>
+                            <Label x:Name="xks" Content="0" Canvas.Left="134" Width="36" Canvas.Top="31" />-->
+                <Label Content="KeyStrokeRecording = " VerticalAlignment="Bottom"  HorizontalAlignment="Left" Canvas.Top="18" Canvas.Left="10" />
+                <Label x:Name="k" Content="Stop" HorizontalAlignment="Right" Canvas.Left="131" Canvas.Top="18" />
+            </Canvas>
+        </Border>
+       
+    </Grid>
+</Window>
